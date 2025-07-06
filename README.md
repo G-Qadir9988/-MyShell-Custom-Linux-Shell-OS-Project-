@@ -113,9 +113,7 @@ flowchart TD
 
 g++ myshell.cpp -o myshell
 ▶️ Run
-bash
-Copy
-Edit
+
 ./myshell
 
 
