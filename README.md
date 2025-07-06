@@ -80,8 +80,7 @@ Each command is executed in a child process via fork() and execvp().
 Supports piped commands:
 
 shell
-Copy
-Edit
+
 MyShell> ls -l | grep .cpp | wc -l
 🔹 Lifecycle Management
 quit command for graceful termination
@@ -89,23 +88,18 @@ quit command for graceful termination
 Basic input validation and error handling
 
 🧪 Example Commands
-bash
-Copy
-Edit
+
 MyShell> whoami
 MyShell> ps aux | grep bash
 MyShell> cat file.txt | sort | uniq
 MyShell> quit
+
 📂 File Structure
-bash
-Copy
-Edit
+
 ├── myshell.cpp       # Main shell implementation
 ├── README.md         # Project documentation
 🔄 Program Flow
-mermaid
-Copy
-Edit
+
 flowchart TD
     A[User enters command] --> B{Contains pipe?}
     B -- Yes --> C[Split using '|']
@@ -116,9 +110,7 @@ flowchart TD
     F --> G[Loop continues]
 🏁 How to Compile & Run
 🔧 Compile
-bash
-Copy
-Edit
+
 g++ myshell.cpp -o myshell
 ▶️ Run
 bash
